@@ -14,6 +14,8 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
+EXPOSE 4455
+
 ENTRYPOINT [ "python" ]
 
 CMD [ "app.py" ]
