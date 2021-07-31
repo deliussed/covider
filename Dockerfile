@@ -6,7 +6,7 @@ RUN apt-get update -y && \
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
 
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 
 WORKDIR /app
 
